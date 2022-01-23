@@ -17,7 +17,7 @@ function BlogpostsMenu({ blogposts }) {
     );   
 }
 
-function BlogpostsMenuRight({ blogposts }) {
+function BlogpostsMenuLeft({ blogposts }) {
     return (
     <>
     {blogposts.map((post) => 
@@ -33,7 +33,7 @@ function HomePage() {
     return (
         <>     
         <div class="grid_2">
-            <BlogpostsMenuRight blogposts={blogpostsData} />
+            <BlogpostsMenuLeft blogposts={blogpostsData} />
         </div> 
         <div class="grid_4 last">
             <BlogpostsMenu blogposts={blogpostsData} />
